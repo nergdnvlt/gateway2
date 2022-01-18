@@ -6,7 +6,7 @@ require('dotenv').config();
 const port = process.env.PORT // || 4000;
 
 
-const gateway = new ApolloGateway();
+const gateway = new ApolloGateway({});
 
 const server = new ApolloServer({
   gateway,
