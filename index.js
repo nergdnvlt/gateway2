@@ -9,7 +9,8 @@ const port = process.env.PORT // || 4000;
 const gateway = new ApolloGateway();
 
 const server = new ApolloServer({
-  gateway
+  gateway,
+  subscriptions: false
 });
 
 server.listen().then(({ url }) => {
