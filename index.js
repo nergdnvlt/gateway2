@@ -4,7 +4,7 @@ const { ApolloGateway } = require('@apollo/gateway');
 require('dotenv').config();
 
 const port = process.env.PORT // || 4000;
-const APOLLO_KEY = process.env.APOLLO_KEY
+
 
 const gateway = new ApolloGateway();
 
