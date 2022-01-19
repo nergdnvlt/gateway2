@@ -13,6 +13,6 @@ const server = new ApolloServer({
   subscriptions: false
 });
 
-server.listen().then(({ url }) => {
+server.listen({ port }).then(({ url }) => {
   console.log(`🚀 Gateway ready at ${url}`);
 }).catch(err => {console.error(err)});
